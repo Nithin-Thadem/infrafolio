@@ -244,9 +244,9 @@ kubectl get pods -l app=portfolio
 <div align="center">
 
 <img src="https://github-readme-stats.vercel.app/api?username=Nithin-Thadem&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6366F1&icon_color=6366F1" width="49%" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Nithin-Thadem&theme=tokyonight&hide_border=true&background=0D1117&ring=6366F1&fire=6366F1&currStreakLabel=6366F1" width="49%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nithin-Thadem&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6366F1" width="49%" />
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Nithin-Thadem&bg_color=0D1117&color=6366F1&line=6366F1&point=FFFFFF&area=true&hide_border=true" width="98%"/>
+<img src="https://github-profile-trophy.vercel.app/?username=Nithin-Thadem&theme=discord&no-frame=true&no-bg=true&column=7&margin-w=15" width="98%"/>
 
 </div>
 
