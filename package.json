@@ -1,7 +1,8 @@
 {
-  "name": "beautiful-portfolio",
+  "name": "nithin-thadem-portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Professional portfolio website for Nithin Thadem - DevOps/Cloud Engineer",
   "type": "module",
   "scripts": {
     "dev": "vite",

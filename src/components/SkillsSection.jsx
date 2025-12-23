@@ -2,29 +2,65 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const skills = [
-  // Frontend
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "React", level: 90, category: "frontend" },
-  { name: "TypeScript", level: 85, category: "frontend" },
-  { name: "Tailwind CSS", level: 90, category: "frontend" },
-  { name: "Next.js", level: 80, category: "frontend" },
+  // CI/CD & Automation
+  { name: "GitHub Actions", level: 95, category: "cicd" },
+  { name: "GitLab CI/CD", level: 85, category: "cicd" },
+  { name: "Jenkins", level: 80, category: "cicd" },
+  { name: "ArgoCD", level: 85, category: "cicd" },
+  { name: "Azure DevOps", level: 75, category: "cicd" },
+  { name: "CircleCI", level: 80, category: "cicd" },
 
-  // Backend
-  { name: "Node.js", level: 80, category: "backend" },
-  { name: "Express", level: 75, category: "backend" },
-  { name: "MongoDB", level: 70, category: "backend" },
-  { name: "PostgreSQL", level: 65, category: "backend" },
-  { name: "GraphQL", level: 60, category: "backend" },
+  // Containerization & Orchestration
+  { name: "Docker", level: 95, category: "containers" },
+  { name: "Kubernetes", level: 90, category: "containers" },
+  { name: "Helm", level: 85, category: "containers" },
+  { name: "Docker Compose", level: 90, category: "containers" },
+  { name: "Podman", level: 75, category: "containers" },
+  { name: "Kustomize", level: 80, category: "containers" },
 
-  // Tools
-  { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "Docker", level: 70, category: "tools" },
-  { name: "Figma", level: 85, category: "tools" },
-  { name: "VS Code", level: 95, category: "tools" },
+  // Infrastructure as Code
+  { name: "Terraform", level: 90, category: "iac" },
+  { name: "AWS CDK", level: 80, category: "iac" },
+  { name: "Pulumi", level: 75, category: "iac" },
+  { name: "Ansible", level: 85, category: "iac" },
+  { name: "CloudFormation", level: 80, category: "iac" },
+
+  // Cloud Platforms
+  { name: "Google Cloud Platform", level: 95, category: "cloud" },
+  { name: "Amazon Web Services", level: 85, category: "cloud" },
+  { name: "Microsoft Azure", level: 75, category: "cloud" },
+  { name: "DigitalOcean", level: 80, category: "cloud" },
+
+  // Monitoring & Observability
+  { name: "Prometheus", level: 85, category: "monitoring" },
+  { name: "Grafana", level: 85, category: "monitoring" },
+  { name: "ELK Stack", level: 80, category: "monitoring" },
+  { name: "Datadog", level: 75, category: "monitoring" },
+  { name: "Jaeger", level: 70, category: "monitoring" },
+  { name: "New Relic", level: 70, category: "monitoring" },
+
+  // Security & Compliance
+  { name: "Trivy", level: 85, category: "security" },
+  { name: "SonarQube", level: 75, category: "security" },
+  { name: "OWASP ZAP", level: 70, category: "security" },
+  { name: "Vault", level: 75, category: "security" },
+  { name: "Snyk", level: 80, category: "security" },
+
+  // Scripting & Automation
+  { name: "Bash/Shell", level: 95, category: "scripting" },
+  { name: "Python", level: 85, category: "scripting" },
+  { name: "PowerShell", level: 80, category: "scripting" },
+  { name: "YAML", level: 90, category: "scripting" },
+  { name: "Go", level: 70, category: "scripting" },
+
+  // Version Control
+  { name: "Git", level: 95, category: "vcs" },
+  { name: "GitHub", level: 95, category: "vcs" },
+  { name: "GitLab", level: 85, category: "vcs" },
+  { name: "Bitbucket", level: 80, category: "vcs" },
 ];
 
-const categories = ["all", "frontend", "backend", "tools"];
+const categories = ["all", "cicd", "containers", "iac", "cloud", "monitoring", "security", "scripting", "vcs"];
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -36,7 +72,7 @@ export const SkillsSection = () => {
     <section id="skills" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          My <span className="text-primary"> Skills</span>
+          <span className="text-primary"> DevOps</span> Skills
         </h2>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
